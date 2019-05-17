@@ -54,7 +54,7 @@ export default {
   ** Axios module configuration
   */
   axios: {
-    baseURL: 'http://127.0.0.1:8008/api/v1/',
+    baseURL: 'https://wowrares-api.herokuapp.com/api/v1/',
   },
 
   /*
