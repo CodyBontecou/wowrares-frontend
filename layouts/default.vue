@@ -108,16 +108,16 @@
                         <div class="caption grey--text">Level</div>
                         <div>{{ mob.level }}</div>
                       </v-flex>
-<!--                      <v-flex xs8 md4 v-for="(item, index) in items" :key="index">-->
-<!--                        <v-img-->
-<!--                          :src=item.image-->
-<!--                          :lazy-src=item.lazy_image-->
-<!--                          max-height="40px"-->
-<!--                          max-width="40px"-->
-<!--                          @mouseover=hoverItem(item)-->
-<!--                        >-->
-<!--                        </v-img>-->
-<!--                      </v-flex>-->
+                      <!--                      <v-flex xs8 md4 v-for="(item, index) in items" :key="index">-->
+                      <!--                        <v-img-->
+                      <!--                          :src=item.image-->
+                      <!--                          :lazy-src=item.lazy_image-->
+                      <!--                          max-height="40px"-->
+                      <!--                          max-width="40px"-->
+                      <!--                          @mouseover=hoverItem(item)-->
+                      <!--                        >-->
+                      <!--                        </v-img>-->
+                      <!--                      </v-flex>-->
                     </v-layout>
                   </v-card>
                 </div>
@@ -147,13 +147,19 @@
         </v-flex>
       </v-layout>
     </v-container>
+
+    <v-footer ma-3>
+      <a href="https://www.patreon.com/bePatron?u=20293765" data-patreon-widget-type="become-patron-button">Become a
+        Patron!</a>
+      <script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>
+    </v-footer>
   </v-app>
 </template>
 
 <script>
   export default {
     computed: {
-      active(){
+      active() {
         return this.$store.state.active
       },
       zone() {
