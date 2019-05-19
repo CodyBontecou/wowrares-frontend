@@ -1,8 +1,7 @@
 <template>
   <v-app dark>
     <v-toolbar>
-      <!-- Mobile Menu -->
-      <v-menu offset-y class="hidden-md-and-up">
+      <v-menu offset-y>
         <v-toolbar-side-icon slot="activator"></v-toolbar-side-icon>
         <v-container
           style="height: 450px; padding: 0;"
@@ -28,33 +27,6 @@
         <span class="font-weight-light">{{ zone.name }}</span>
       </v-toolbar-title>
       <v-spacer></v-spacer>
-      <div class="hidden-sm-and-down">
-        <v-menu offset-y class="hidden-md-and-up">
-          <template v-slot:activator="{ on }">
-            <v-btn
-              color=""
-              dark
-              v-on="on"
-            >
-              Zones
-            </v-btn>
-          </template>
-          <v-container
-            style="height: 450px; padding: 0;"
-            class="scroll-y"
-          >
-            <v-list>
-              <v-list-tile
-                v-for="(zone, index) in zones"
-                :key="index"
-                @click="mobsInfo(zone)"
-              >
-                <v-list-tile-title>{{zone.name}}</v-list-tile-title>
-              </v-list-tile>
-            </v-list>
-          </v-container>
-        </v-menu>
-      </div>
     </v-toolbar>
 
     <v-container grid-list-md text-xs-center>
