@@ -73,3 +73,4 @@ export const mutations = {
     state.active = !state.active;
   }
 };
+

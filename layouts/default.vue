@@ -1,5 +1,6 @@
 <template>
-  <v-app dark>
+  <div>
+    <v-app dark>
     <v-toolbar>
       <v-menu offset-y>
         <v-toolbar-side-icon slot="activator"></v-toolbar-side-icon>
@@ -117,6 +118,7 @@
             </v-expansion-panel>
           </v-container>
         </v-flex>
+        <Nuxt />
       </v-layout>
     </v-container>
 
@@ -126,6 +128,7 @@
       <script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>
     </v-footer>
   </v-app>
+  </div>
 </template>
 
 <script>
@@ -164,7 +167,6 @@
       mouseOver(mob) {
         this.$store.commit('setMob', mob);
         this.$store.commit('changeActive');
-
       },
       mouseOff() {
         this.$store.commit('changeActive');
