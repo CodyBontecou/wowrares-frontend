@@ -127,17 +127,9 @@
       dark
       padless
     >
-      <v-card
-        flat
-        tile
-        class="text-center"
-      >
-        <v-card-text class="white--text">
-          <a href="https://www.patreon.com/bePatron?u=20293765" data-patreon-widget-type="become-patron-button">Become a
-            Patron!</a>
-          <script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>
-        </v-card-text>
-      </v-card>
+      <a href="https://www.patreon.com/bePatron?u=20293765" data-patreon-widget-type="become-patron-button">Become a
+        Patron!</a>
+      <script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>
     </v-footer>
 
   </v-app>
